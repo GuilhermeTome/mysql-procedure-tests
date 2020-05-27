@@ -14,15 +14,16 @@ CREATE TABLE `product_class` (
     `name` varchar(200) NOT NULL,
     `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
     `updated_at` timestamp NOT NULL DEFAULT current_timestamp(),
-    PRIMARY KEY(`id_class`)
+    PRIMARY KEY(`id_product_class`)
 );
 
 -- Products table
 CREATE TABLE `products` (
     `id_product` int(11) NOT NULL AUTO_INCREMENT,
-    `id_product_class` int(11) NOT NULL AUTO_INCREMENT,
+    `id_product_class` int(11) NOT NULL,
     `name` varchar(200) NOT NULL,
     `secure_zone` int(11) NOT NULL,
+    `qt` int(11) NOT NULL,
     `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
     `updated_at` timestamp NOT NULL DEFAULT current_timestamp(),
     PRIMARY KEY(`id_product`),

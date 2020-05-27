@@ -10,8 +10,7 @@ It's a basic system builded to tests mysql procedures
 
 ### Prerequisites
 
-* npm
-* gulp client
+* MySQL 5.7.x
 
 ### Installing
 
